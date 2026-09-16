@@ -1,0 +1,6 @@
+{
+  "name": "Enterprise Retail Intelligence Platform",
+  "description": "Advanced retail analytics and intelligence platform featuring multi-dimensional KPIs, sales & margin forecasting, RFM customer segmentation, inventory optimization, logistics monitoring, and automated dataset profiling.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
