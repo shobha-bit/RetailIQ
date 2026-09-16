@@ -524,6 +524,22 @@ def inject_custom_css():
             color: #4F46E5 !important;
             box-shadow: 0 1px 3px rgba(79, 70, 229, 0.1) !important;
         }
+        /* Student Test Sample Button - Final Visibility Fix */
+.stButton > button,
+.stButton > button p,
+.stButton > button span {
+    color: #334155 !important;
+    background-color: #ffffff !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.stButton > button:hover,
+.stButton > button:hover p,
+.stButton > button:hover span {
+    color: #4F46E5 !important;
+    background-color: #ffffff !important;
+}
 
         /* Streamlit Download Buttons - Visibility Fix */
 .stDownloadButton > button {
