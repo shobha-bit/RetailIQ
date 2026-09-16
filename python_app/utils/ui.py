@@ -525,20 +525,28 @@ def inject_custom_css():
             box-shadow: 0 1px 3px rgba(79, 70, 229, 0.1) !important;
         }
         /* Student Test Sample Button - Final Visibility Fix */
-.stButton > button,
-.stButton > button p,
-.stButton > button span {
+.stButton > button {
     color: #334155 !important;
-    background-color: #ffffff !important;
+    background-color: #FFFFFF !important;
+    border: 1px solid #E2E8F0 !important;
     opacity: 1 !important;
     visibility: visible !important;
 }
 
-.stButton > button:hover,
-.stButton > button:hover p,
-.stButton > button:hover span {
+.stButton > button * {
+    color: #334155 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.stButton > button:hover {
     color: #4F46E5 !important;
-    background-color: #ffffff !important;
+    background-color: #FFFFFF !important;
+    border-color: #4F46E5 !important;
+}
+
+.stButton > button:hover * {
+    color: #4F46E5 !important;
 }
 
         /* Streamlit Download Buttons - Visibility Fix */
