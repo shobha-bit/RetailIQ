@@ -1,6 +1,5 @@
 import streamlit as st
 from typing import Optional, List, Dict, Any
-import textwrap
 
 
 def inject_custom_css():
@@ -744,7 +743,6 @@ def render_top_navbar(
         unsafe_allow_html=True,
     )
 
-
 def render_page_header(
     title: str = "Executive Dashboard",
     description: str = "Unified view of revenue velocity, margin health, omnichannel fulfillment, and strategic inventory signals.",
@@ -758,25 +756,21 @@ def render_page_header(
     badge_html = f'<span class="badge badge-primary"><span class="status-dot"></span>{badge_label}</span>' if badge_label else ""
     secondary_badge_html = f'<span class="badge badge-neutral">{secondary_badge}</span>' if secondary_badge else ""
 
-    
     st.markdown(
-    textwrap.dedent(
-        f"""
-        <div class="page-header-container">
-            <div class="page-header-left">
-                {greeting_html}
-                <h1 class="page-title">{title}</h1>
-                <p class="page-description">{description}</p>
-            </div>
-            <div class="page-header-badges">
-                {badge_html}
-                {secondary_badge_html}
-            </div>
-        </div>
-        """
-    ),
+    f'<div class="page-header-container">'
+    f'<div class="page-header-left">'
+    f'{greeting_html}'
+    f'<h1 class="page-title">{title}</h1>'
+    f'<p class="page-description">{description}</p>'
+    f'</div>'
+    f'<div class="page-header-badges">'
+    f'{badge_html}'
+    f'{secondary_badge_html}'
+    f'</div>'
+    f'</div>',
     unsafe_allow_html=True,
 )
+
 
 
 def render_kpi_card(
