@@ -524,6 +524,61 @@ def inject_custom_css():
             color: #4F46E5 !important;
             box-shadow: 0 1px 3px rgba(79, 70, 229, 0.1) !important;
         }
+
+        /* Streamlit Download Buttons - Visibility Fix */
+.stDownloadButton > button {
+    border-radius: 8px !important;
+    font-weight: 600 !important;
+    font-size: 0.8rem !important;
+    padding: 0.45rem 0.85rem !important;
+    transition: all 0.15s ease !important;
+    border: 1px solid #E2E8F0 !important;
+    background: #FFFFFF !important;
+    color: #334155 !important;
+}
+
+.stDownloadButton > button:hover {
+    background: #F8FAFC !important;
+    border-color: #CBD5E1 !important;
+    color: #1E293B !important;
+}
+
+
+/* Streamlit File Uploader - Visibility Fix */
+.stFileUploader {
+    color: #334155 !important;
+}
+
+.stFileUploader label {
+    color: #334155 !important;
+    font-weight: 600 !important;
+}
+
+.stFileUploader section {
+    background: #FFFFFF !important;
+    border: 1px dashed #CBD5E1 !important;
+    border-radius: 8px !important;
+}
+
+.stFileUploader section button {
+    background: #FFFFFF !important;
+    color: #334155 !important;
+    border: 1px solid #E2E8F0 !important;
+    border-radius: 8px !important;
+    font-weight: 600 !important;
+}
+
+.stFileUploader section button:hover {
+    background: #F8FAFC !important;
+    color: #1E293B !important;
+}
+
+
+/* Student Test Sample / Other Streamlit Buttons */
+.stButton > button {
+    color: #334155 !important;
+    background: #FFFFFF !important;
+}
         /* Streamlit Tabs - Visibility Fix */
 .stTabs [data-baseweb="tab-list"] {
     gap: 0.35rem !important;
