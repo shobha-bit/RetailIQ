@@ -1,5 +1,6 @@
 import streamlit as st
 from typing import Optional, List, Dict, Any
+import textwrap
 
 
 def inject_custom_css():
@@ -757,7 +758,9 @@ def render_page_header(
     badge_html = f'<span class="badge badge-primary"><span class="status-dot"></span>{badge_label}</span>' if badge_label else ""
     secondary_badge_html = f'<span class="badge badge-neutral">{secondary_badge}</span>' if secondary_badge else ""
 
+    
     st.markdown(
+    textwrap.dedent(
         f"""
         <div class="page-header-container">
             <div class="page-header-left">
@@ -770,9 +773,10 @@ def render_page_header(
                 {secondary_badge_html}
             </div>
         </div>
-        """,
-        unsafe_allow_html=True,
-    )
+        """
+    ),
+    unsafe_allow_html=True,
+)
 
 
 def render_kpi_card(
