@@ -516,12 +516,43 @@ def inject_custom_css():
             padding: 0.45rem 0.85rem !important;
             transition: all 0.15s ease !important;
             border: 1px solid #E2E8F0 !important;
+            background: #FFFFFF !important;
+            color: #334155 !important;
         }
         .stButton > button:hover {
             border-color: #4F46E5 !important;
             color: #4F46E5 !important;
             box-shadow: 0 1px 3px rgba(79, 70, 229, 0.1) !important;
         }
+        /* Streamlit Tabs - Visibility Fix */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 0.35rem !important;
+    border-bottom: 1px solid #E2E8F0 !important;
+}
+
+.stTabs [data-baseweb="tab"] {
+    color: #475569 !important;
+    background: #FFFFFF !important;
+    border-radius: 8px 8px 0 0 !important;
+    font-weight: 600 !important;
+    font-size: 0.8rem !important;
+    padding: 0.55rem 0.85rem !important;
+}
+
+.stTabs [data-baseweb="tab"]:hover {
+    color: #4F46E5 !important;
+    background: #F8FAFC !important;
+}
+
+.stTabs [data-baseweb="tab"][aria-selected="true"] {
+    color: #4F46E5 !important;
+    font-weight: 700 !important;
+}
+
+.stTabs [data-baseweb="tab-highlight"] {
+    background: #4F46E5 !important;
+    height: 2px !important;
+}
 
         /* Streamlit Dataframe wrapper */
         div[data-testid="stDataFrame"] {
